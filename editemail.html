@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit and Fix Email ID</title>
+  <script>
+    function editEmail() {
+      var currentEmail = document.getElementById("currentEmail").innerHTML;
+      var newEmail = prompt("Enter the new email ID:");
+      document.getElementById("currentEmail").innerHTML = newEmail;
+      alert("Email ID updated successfully!");
+    }
+  </script>
+</head>
+<body>
+  <h1>Edit Email ID</h1>
+  <p>Current Email ID: <span id="currentEmail">example@example.com</span></p>
+  <button onclick="editEmail()">Edit Email</button>
+</body>
+</html>
